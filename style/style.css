@@ -20,7 +20,6 @@ body {
 
 /*       Header       */
 header {
-    color: #d8d8d8;
     margin-bottom: 100px;
 }
 header .background {
@@ -36,20 +35,11 @@ header .background {
     background-size: cover;
     -webkit-mask-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
 }
-header .cover {
-    margin-top: 50px;
-    text-align: center;
+img {
+    border: 3px solid #af8e4d;
 }
-header .cover img {
-    width: 90%;
-    max-width: 600px;
-}
-header .title {
-    margin-top: 120px;
-    margin-bottom: 50px;
-    font-size: 27px;
-    text-align: center;
-    color: #ffffff;
+.image {
+    border: 3px solid #af8e4d;
 }
 
 /*       Content       */
@@ -77,142 +67,8 @@ header .title {
     width: 90%;
     margin: 0 auto;
 }
-.bold {
-    font-weight: 900;
-}
-.italic {
-    font-style: italic;
-}
 .center {
     text-align: center;
-}
-.paragraph {
-    text-align: justify;
-	margin: 10px 10px 10px 10px;
-}
-.row {
-    display: flex;
-}
-.row-column {
-    width: 50%;
-    padding: 20px;
-}
-.row-column.row-middle {
-    align-self: center;
-}
-.row-column > .title {
-    color: #d8d8d8;
-    font-family: 'Boston';
-    font-size: 28px;
-    text-align: center;
-    margin-top: 20px;
-}
-.row-column > .title:after {
-    display: block;
-    content: "";
-    width: 80px;
-    height: 2px;
-    background-color: #e5b962;
-    opacity: 0.75;
-    margin: 0 auto;
-}
-.row-column .row-img {
-    width: 100%;
-    border: 3px solid #af8e4d;
-}
-.row-column .address {
-    margin-top: 10px;
-    text-align: center;
-}
-
-/*       Speakers       */
-.speakers {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 -30px 0 -30px;
-}
-.speaker {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 160px;
-    margin: 30px 30px;
-}
-.speaker img {
-    width: 144px;
-    height: 144px;
-    border: 3px solid #af8e4d;
-    align-self: center;
-}
-.speaker .name {
-    font-weight: 900;
-    margin-top: 5px;
-}
-
-/*       Syllabus Item       */
-.day-title {
-    display: inline-block;
-    font-size: 24px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #af8e4d;
-    margin: 30px 0 30px 0;
-    font-weight: 700;
-}
-.day {
-    display: table;
-    width: 100%;
-}
-.day-item {
-    display: table-row;
-}
-.day-item > .timeslot {
-    display: table-cell;
-    width: 200px;
-    padding-top: 30px;
-}
-.day .day-item:first-child > .timeslot {
-    padding-top: 0px;
-}
-.day-item > .timeslot .divider {
-    display: inline-block;
-    content: "";
-    width: 5px;
-    height: 2px;
-    background-color: #d8d8d8;
-    opacity: 0.75;
-    margin: 5px 3px;
-}
-.day-item > .content {
-    display: table-cell;
-}
-.day-item > .content > .title {
-    font-weight: 900;
-}
-.day-item > .content > .by span {
-    color: #af8e4d;
-}
-.day-item > .content > .description {
-    margin-top: 10px;
-}
-
-/*       Sponsors       */
-.sponsors {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 -35px 0 -35px;
-}
-.sponsor {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 35px;
-    justify-content: center;
-}
-.sponsor img {
-    max-width: 250px;
-    display: inline-flex;
 }
 
 /*       Contact       */
@@ -225,53 +81,4 @@ footer {
     margin-top: 100px;
     margin-bottom: 25px;
     text-align: center;
-}
-
-@media only screen and (max-width: 1400px) {
-    .section.first {
-        margin-top: 100px;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .row.block {
-        display: block;
-    }
-    .row-column {
-        width: 100%;
-    }
-    .row-column .row-img {
-        width: 100%;
-    }
-
-    .day-item > .timeslot {
-        width: 175px;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .row-column .address {
-        font-size: 20px;
-    }
-
-    .speakers {
-        margin: 0 -20px 0 -20px;
-    }
-    .speaker {
-        margin: 10px;
-    }
-    .day-item > .timeslot {
-        width: 100px;
-    }
-    .day-item > .timeslot .divider {
-        display: block;
-        content: "";
-        width: 50px;
-        height: 1px;
-        opacity: 0.75;
-        margin: 10px 0;
-    }
-    .sponsors {
-        margin: 0 -20px 0 -20px;
-    }
 }
