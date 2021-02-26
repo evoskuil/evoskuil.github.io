@@ -294,9 +294,6 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-    .title {
-        font-size: 50px;
-    }
     .row.block {
         display: block;
     }
@@ -313,9 +310,6 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-    .title {
-        font-size: 40px;
-    }    
     .embed {
         max-width: 100%;
     }
