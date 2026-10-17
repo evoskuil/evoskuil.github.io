@@ -157,6 +157,10 @@ header .title {
     max-width:100%;
     border:1px solid #af8e4d;
 }
+iframe.row-img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
 
 /*       Speakers       */
 .speakers {
